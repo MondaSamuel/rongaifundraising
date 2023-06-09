@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin: 35px;
+  }
+  .login-form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 90px;
+    width: 300px;
+  }
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+
+    border: 1px solid #ccc;
+  }
+  .form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .form-group p {
+    text-align: center;
+  }
+.form-group p a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+
+  
+  .form-group-1{
+    align-items: center;
+    color:red;
+    padding: auto;
+    border: none;
+    cursor: pointer;
+
+
+  }
+
+  .logo2{
+align-self: center;
+
+
+  }
