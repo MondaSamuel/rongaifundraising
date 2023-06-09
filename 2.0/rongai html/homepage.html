@@ -1,78 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS link -->
     <link rel="stylesheet" href="static/homepage.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- SOCIAL MEDIA ICON PACK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>RongaiBoys</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Rongai | Alumni </title>
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="static/assets/logo2.png" width="130px" height="100px">
-            </div>
-            <div class="wrapper">
-                <nav>
-                    <a href="homepage.html"><button class="btn">Home</button></a>
-                    <a href="about.html"><button class="btn">About</button></a>
-                    <button class="btn">Contacts</button>
-                    <button class="btn">Fundraiser</button>
-                </nav>
-                <!-- user login input point -->
-                <div class="access">
-                 <a href="login.html"><button class="btn-main">Login</button></a>
-                    <a href="register.html"><button class="btn-main">Register</button></a>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Rongai</a></div>
+            <ul class="links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+                <a href="register.html" class="action-btn">Start Fundraiser</a>
+                <div class="toggle_btn icon">
+                    <i class="fa-regular fa-bars">fa-bars</i>
                 </div>
-                <!-- SOCIAL LINKS -->
-                <div class="help" style="display: flex;align-items: center;">
-                    <a class="email-link" href="mailto:"><i class="material-icons mail-icon">mail</i>samwelmonda48@gmail.com</a>
-                    <span style="align-items: center;display:flex;"><i class="material-icons phone-icon">phone</i>+254745232052</span>
-                </div> 
-                
-            </div>
-        </div>
-        <!-- CONTENT -->
-        <div class="content">
-            <img src="static/assets/sale.png">
-        </div>
-        <div class="instructions">
-            <img src="static/assets/instructions.png">
-        </div>
 
-        <!--Footer-->
+                <div class="dropdown_menu">
+                    <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="register.html" class="action-btn">Start Fundraiser</a></li>
 
-        <footer class="footer"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="static/assets/logo.png" alt=""></a>
-                        </div>
-        
                 </div>
-            </div>
-        </footer>
-    </div>
-
-</body>
-</html>
-
-        
-       
-        
+            
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnicon = document.querySelector('.toggle_btn icon i');
+        const dropdownMenu = document.querySelector('.dropdown_menu');
 
 
-    </div>
+        toggleBtn.onclick - function() {
+            dropdownMenu.classList.toggle('open')
+            const isOpen =dropdownMenu.classList.contains('open');
+
+            toggleBtn.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+    </script>
     
 </body>
 </html>
