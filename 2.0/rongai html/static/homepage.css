@@ -1,157 +1,120 @@
 *{
   margin: 0;
-  padding: 0;
+  padding:0;
   box-sizing: border-box;
-  font-family:'Poppins', 'Helvetica;
+  font-family: 'open sans', sans-serif;
 }
-body {
+body{
+height: 100vh;
+background-color: black;
+background-image: url(assets/sale.png);
+background-size: cover;
+background-position: center;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:azure;
+  font-size: 1rem;
+}
+a:hover{
+  color: rgb(255, 230, 0);
+}
+header{
+  position: relative;
+  padding:0 2rem;
+}
+.navbar{
+  width:100%;
+  height: 60px;
+  max-width: 1200px ;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .links{
+  display:flex;
+  gap:2rem;
+}
+.navbar .toggle_btn{
+  color: antiquewhite;
+  font-size:1.5rem;
+  cursor: pointer;
+  display:none
+}
+.action-btn{
+  background-color: rgb(9, 255, 0);
+  color: wheat;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline:none;
+  border-radius:20px;
+  font-size:0.8rem;
+  cursor:pointer;
+  font-weight: bold;
+  transition:scale 0.2 ease;
+}
+.action-btn:hover{
+  scale:1.05;
+  color:#fff
+}
+.action_btn:active{
+  scale:0.95;
+}
+
+/*Dropdown Menu*/
+.dropdown_menu{
+  position: absolute;
+  right:2rem;
+  top:60px;
+  height: 0;
+  width:300px;
+  background:rgba(255, 255, 255, 0.1);
+  backdrop-filter:blur(15px);
+  border-radius:10px;
+  overflow: hidden;
+  transition:height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+.dropdown_menu.open{
+    height: 240px;
+
+
+  }
+
+
+.dropdown_menu li{
+  padding:0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.dropdown_menu .action-btn{
+  width:100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-
 }
-.logo{
-  position: relative;
-  left: 25px;
-}
-.container{
-  width:1350px;
-  height:300vh;
-  padding:0px;
-  
-  overflow-x:hidden;
-  
-}
-.header {
-  position: fixed;
-  top: 0px;
-  background-color:transparent;
-  width: 100%;
-  z-index: 1;
-  height: 18vh;
-  background-image: url(assets/header.png);
-}
-.wrapper {
-  position: absolute;
-  align-items: center;
-  bottom: 50px;
-  left:40%;
-  right:65%
-  height: 100vh;
-}
-.btn{
-  color: aliceblue;
-  text-decoration:solid;
-  border-radius: 13px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 700;
-  font-family:'Times New Roman', Times, serif;
-  border: none;
-  background-color: transparent;
-  line-height: 24px;
-  outline: none;
-  white-space: nowrap;
-  padding: 0  27 65 25px;
-  font-weight: 777;
-  text-transform: uppercase;
-  /*Transistion property*/
-  transition-property: transform;  
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-}
-
-.btn:hover{
-  transform: translateY(-5px);
-  background-color: #ac4141;
-
-
-
-}
-.access{
-  position: absolute;
-  bottom: 30px;
-  left: ;
-}
-.btn-main{
-  align-items: center;
-  color: aliceblue;
-  background-color: transparent;
-  font-size: 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1.rem;
-  outline: none;
-  white-space: nowrap;
-  padding: 0 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.2);
-  line-height: 35px;
-  border: none;
-   /*Transistion property*/
-   transition-property: transform;  
-   transition-duration: 0.3s;
-   transition-timing-function: ease;
-}
-.btn-main:hover{
-  transform: translatey(10px); 
-  background-color: #ee7f7f;
-
-
-}
-.mail-icon {
-  font-size: 24px;
-  width: 20px;
-  position: absolute;
-  bottom: 29;
-  left:-29px ;
-  cursor: pointer;
-   /*Transistion property*/
-   transition-property: transform;  
-   transition-duration: 0.3s;
-   transition-timing-function: ease;
-}
-.help{
-  position: absolute;
-  top:23px;
-  left: 26%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: aliceblue;
-}
-
-.phone-icon{
- font-size: 24px;
-color: aliceblue;
-cursor: pointer;
-}
-.stats{
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.content{
-background-image: url("");
-background-size: contain;
-margin:150px auto;
-width: 100%;
-}
-.content img{
-  max-width: 100%;
-  height:auto !important;
-  bottom:250px;
-  left: 50%;
+.dropdown_menu{
+  display: block;
 
 }
 
-.footer{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background-color: aliceblue;
-  color: aliceblue;
-  font-size: 12px;
-  text-align: center;
-  
+/* RESPONSIVE DESIGN */
+@media(max-width:992px) {
+   .navbar.links,
+   .navbar .action-btn{
+      display:none;
+    }
+    .navbar .toggle_btn{
+      display:block;
+    }
+
 }
