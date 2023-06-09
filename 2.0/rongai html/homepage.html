@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>Rongai | Alumni </title>
 </head>
 <body>
@@ -24,7 +23,7 @@
             </ul>
                 <a href="register.html" class="action-btn">Start Fundraiser</a>
                 <div class="toggle_btn icon">
-                    <i class="fa-regular fa-bars"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
 
                 <div class="dropdown_menu">
@@ -45,14 +44,20 @@
         const dropdownMenu = document.querySelector('.dropdown_menu');
 
 
-        toggleBtn.onclick - function() {
-            dropdownMenu.classList.toggle('open')
-            const isOpen =dropdownMenu.classList.contains('open');
+        toggleBtn.onclick = function() {
+  dropdownMenu.classList.toggle('open');
+  const isOpen = dropdownMenu.classList.contains('open');
+  
+  // Toggle the class of the toggle button icon
+  if (isOpen) {
+    toggleBtnicon.classList.remove('fa-bars');
+    toggleBtnicon.classList.add('fa-xmark');
+  } else {
+    toggleBtnicon.classList.remove('fa-xmark');
+    toggleBtnicon.classList.add('fa-bars');
+  }
+};
 
-            toggleBtn.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
 
     </script>
     
