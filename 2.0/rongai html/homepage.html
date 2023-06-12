@@ -1,78 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS link -->
-    <link rel="stylesheet" href="static/homepage.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RongaiBoys</title>
 
-    <!-- SOCIAL MEDIA ICON PACK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>RongaiBoys</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- CSS link -->
+<link rel="stylesheet" href="static/homepage.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- SOCIAL MEDIA ICON PACK -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="static/assets/logo2.png" width="130px" height="100px">
-            </div>
-            <div class="wrapper">
-                <nav>
-                    <a href="homepage.html"><button class="btn">Home</button></a>
-                    <a href="about.html"><button class="btn">About</button></a>
-                    <button class="btn">Contacts</button>
-                    <button class="btn">Fundraiser</button>
-                </nav>
-                <!-- user login input point -->
-                <div class="access">
-                 <a href="login.html"><button class="btn-main">Login</button></a>
-                    <a href="register.html"><button class="btn-main">Register</button></a>
-                </div>
-                <!-- SOCIAL LINKS -->
-                <div class="help" style="display: flex;align-items: center;">
-                    <a class="email-link" href="mailto:"><i class="material-icons mail-icon">mail</i>samwelmonda48@gmail.com</a>
-                    <span style="align-items: center;display:flex;"><i class="material-icons phone-icon">phone</i>+254745232052</span>
-                </div> 
-                
-            </div>
-        </div>
-        <!-- CONTENT -->
-        <div class="content">
-            <img src="static/assets/sale.png">
-        </div>
-        <div class="instructions">
-            <img src="static/assets/instructions.png">
-        </div>
-
-        <!--Footer-->
-
-        <footer class="footer"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="static/assets/logo.png" alt=""></a>
-                        </div>
-        
-                </div>
-            </div>
-        </footer>
+	<div class="header-container">
+    <div class="header">
+      <div class="logo">
+        <img src="static/assets/logo2.png" width="130px" height="100px">
+      </div>
+      <div id="nav-menu" class="nav">
+        <ul>
+          <li><a href="./homepage.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./about.html">Contacts</a></li>
+          <li><a href="./about.html">Fundraiser</a></li>
+        </ul>
+      </div>
+      <!-- user login input point -->
+      <div class="access">
+        <a href="./login.html" class="btn-main">Login</a>
+        <a href="./register.html" class="btn-main register">Register</a>
+      </div>
+      
+      <div class="contact-link">
+        <a class="email-link" href="mailto:"><i class="material-icons mail-icon">mail</i>samwelmonda48@gmail.com</a>
+        <span style="align-items: center;display:flex;"><i class="material-icons phone-icon">phone</i>+254745232052</span>
+      </div>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </div>
+	
+	<!-- CONTENT -->
+	<div class="scroll-1-container">
+		<div class="slant-container">
+			<div class="red-rectangle first"></div>
+			<div class="black-rectangle"></div>
+			<div class="red-rectangle last"></div>
+			<div class="text-container">
+				<h1>RONGAI ALUMNI FUNDRAISER</h1>
+				<h2>SIMPLE.FAST.SECURE</h2>
+				<div class="icon-row">
+					<div class="icon">
+						<img src="./static/assets/campaigns.png" alt="Icon 1" />
+						<p><span id="campaignsCount"></span> campaigns</p>
+						
+				</div>
+				<div class="icon">
+						<img src="./static/assets/people.png" alt="Icon 2" />
+						<p>Over <span id="supportersCount"></span> alumni supporters</p>	
+				</div>
+				<div class="icon-simple">
+					<div class="simple-container">
+						<img src="./static/assets/simple.png" alt="Icon 2" />
+					</div>
+					<p>Simple, Fast, Secure</p>
+				</div>				
+				</div>
+			</div>
+			
+	</div>
+	</div>
+	<div class="instructions-wrapper">
+		<div class="instructions-container">
+			<div class="instructions-left-side">
+				<div class="create-text">
+					<h3>
+						Create your fundraiser<br>
+					</h3>
+				</div>
+				<div class="minutes-place">
+					<h1>It'll take only 2 minutes!</h1><br>
+				</div>
+				<div class="more-details">
+					<h3>Just tell us a few details about you <br>and what you are raising funds for.</h3>
+				</div>
+					
+			</div>
+			<div>
+				<div class="instructions-right-side">
+					<img src="./static/assets/instructions.png" alt="Image" />
+				</div>
+			</div>	
+		</div>
+	</div>
 
-</body>
-</html>
-
-        
-       
-        
-
-
-    </div>
-    
+	<!--Footer-->
+	<footer class="footer"> 
+		<div class="footer-container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="footer-logo">
+							<a href="index.html"><img src="static/assets/logo.png" alt=""></a>
+					</div>
+				</div>
+		</div>
+	</footer>
+	<!-- JavaScript code -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./static/assets/js/script.js"></script>
+	<script src="./static/assets/js/main.js"></script>
 </body>
 </html>
