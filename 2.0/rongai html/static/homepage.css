@@ -34,22 +34,22 @@
   top: 0;
   right: 0;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 8px;
+  margin-right: 1.2rem;
   user-select: none;
   appearance: none;
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
-  height: 10px;
 }
 
 .hamburger span {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: block;
   width: 33px;
   height: 4px;
-  position: absolute;
+  margin-bottom: 5px;
+  position: relative;
   background-color: var(--light);
   border-radius: 6px;
   z-index: 1;
@@ -58,8 +58,9 @@
 
 .hamburger span:nth-child(2) {
   transform: translateX(10px);
-  background-color: var(--primary);
-  margin: 0;
+  background-color: var(--light);
+  margin-bottom: 5px;
+  margin-left: -10px;
 }
 
 .hamburger.is-active span:nth-child(1) {
@@ -124,7 +125,7 @@
 
 @media (max-width: 767px) {
   .nav {
-    margin-top: 2.5rem;
+    margin-top: 10.5rem;
     display: none;
     position: absolute;
     width: 100%;
@@ -134,7 +135,7 @@
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-left: 20%;
-    z-index: 9999;
+    z-index: 9999 !important;
   }
 
   .nav.active {
@@ -149,6 +150,15 @@
 
   .nav li {
     margin: 10px 0;
+    background-color: transparent !important;
+    position: static !important; 
+  }
+
+  .nav li:hover {
+    background-color: transparent !important;
+    transition: none !important;
+    transform: none !important;
+    position: static !important; 
   }
 
   .nav a {
@@ -169,6 +179,7 @@
     outline: none;
     cursor: pointer;
     color: white;
+    margin-top: 1.5px;
   }
   
 
@@ -218,6 +229,20 @@
 .access a {
   text-decoration: none; 
 }
+
+@media (max-width: 767px) {
+  .access {
+    position: relative;
+  }
+
+  .access .login {
+    position: absolute;
+    top: -2.7rem;
+    left: 10rem;
+    background-color: #ee7f7f;
+  }
+}
+
 
 .register {
   display: block;
