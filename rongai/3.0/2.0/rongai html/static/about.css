@@ -1,0 +1,16 @@
+.{
+
+    height: 720p;
+    background-color:whitesmoke;
+
+}
+.about{
+    position: absolute;
+    right: 50px;
+
+}
+.img {
+position:absolute;
+left: 50%;
+
+}
